@@ -1,6 +1,7 @@
 ### **NutriFit Frontend – Aplicación Web desarrollada en React**
 
 🥗 **Descripción**
+
 NutriFit es una plataforma web dinámica que ayuda a los usuarios a organizar planes de alimentación saludable ajustados a un presupuesto semanal o mensual. Este repositorio corresponde al **frontend**, implementado con **React**, y se encarga de ofrecer una interfaz amigable y de comunicarse con el backend en **Spring Boot** a través de una **API REST**.
 
 🎯 **Características principales**
