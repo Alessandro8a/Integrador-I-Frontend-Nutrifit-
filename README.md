@@ -1,60 +1,81 @@
-# NutriFit Frontend - Aplicación Web en React
+NutriFit Frontend – Aplicación Web desarrollada en React
 
-## 🥗 Descripción
+- Descripción
+NutriFit es una plataforma web dinámica que ayuda a los usuarios a organizar planes de alimentación saludable ajustados a un presupuesto semanal o mensual. Este repositorio corresponde al frontend, implementado con React, y se encarga de ofrecer una interfaz amigable y de comunicarse con el backend en Spring Boot a través de una API REST.
 
-**NutriFit** es una aplicación web interactiva que permite a los usuarios planificar comidas saludables adaptadas a su presupuesto semanal o mensual. Este repositorio contiene el **frontend desarrollado en React**, encargado de proporcionar una experiencia de usuario intuitiva y conectarse con el backend (Spring Boot) mediante una API REST.
+- Características principales
 
-## 🎯 Funcionalidades
+Registro y autenticación de usuarios.
 
-- Registro e inicio de sesión de usuarios.
-- Registro de presupuesto semanal para alimentos.
-- Generador de planes de comida personalizados.
-- Visualización y selección de recetas saludables.
-- Seguimiento en tiempo real del gasto vs. presupuesto.
-- Historial de planes de comidas y presupuestos anteriores.
-- Cálculo de IMC con recomendaciones.
-- Exportación de planes e historial en PDF.
-- Responsive design para dispositivos móviles.
+Gestión de presupuesto alimenticio semanal.
 
-## 🧰 Tecnologías Utilizadas
+Generación automática de planes de comidas personalizados.
 
-- React 18+
-- React Router DOM
-- Axios
-- TailwindCSS / CSS Modules
-- React Hook Form + Yup (validaciones)
-- jsPDF / html2canvas (para generación de PDF)
-- Context API (para manejo de sesión)
-- Vite (para desarrollo y build)
+Exploración y elección de recetas saludables.
 
-## ⚙️ Instalación y Ejecución
+Monitoreo en tiempo real del gasto frente al presupuesto disponible.
 
-Instala las dependencias:
+Consulta del historial de planes de comidas y presupuestos anteriores.
+
+Cálculo del IMC con sugerencias nutricionales.
+
+Exportación de planes e historiales en formato PDF.
+
+Diseño adaptable a dispositivos móviles (responsive).
+
+- Tecnologías empleadas
+
+React 18 o superior
+
+React Router DOM
+
+Axios
+
+TailwindCSS / CSS Modules
+
+React Hook Form + Yup para validaciones
+
+jsPDF / html2canvas para exportación en PDF
+
+Context API para la gestión de sesiones
+
+Vite para entorno de desarrollo y compilación
+
+- Instalación y ejecución
+
+Instala las dependencias del proyecto:
 
 npm install
 
-Crea un archivo .env en la raíz del proyecto con la URL de tu backend:
+
+Crea un archivo .env en la raíz del proyecto con la URL del backend.
+
+Inicia la aplicación:
 
 npm run dev
 
-Accede desde tu navegador en:
+
+Accede desde el navegador en:
 
 http://localhost:5173
 
-📄 Principales Vistas
-- Inicio: Noticias de nutrición, tips, videos saludables, IMC y FAQ.
 
-- Login / Registro: Creación y acceso a cuentas de usuario.
+- Vistas principales
 
-- Dashboard: Panel principal con resumen de estado, acceso a funcionalidades clave.
+Inicio: Contenido informativo sobre nutrición, consejos, videos, cálculo de IMC y preguntas frecuentes.
 
-- Planificador: Ingreso de presupuesto, selección de recetas por día, resumen del plan y generación de PDF.
+Login / Registro: Creación y acceso a cuentas de usuario.
 
-- Historial: Listado de presupuestos pasados, fechas y exportación total en PDF.
+Dashboard: Panel general con un resumen del estado y accesos rápidos a las funcionalidades.
 
-📋 Consideraciones
-Asegúrate de tener el backend corriendo en paralelo (nutrifit-backend) para el correcto funcionamiento.
+Planificador: Carga de presupuesto, selección diaria de recetas, resumen del plan y exportación en PDF.
 
-Habilita CORS en el backend si se usa desde un host diferente.
+Historial: Visualización de presupuestos anteriores, fechas y descarga del historial completo en PDF.
 
-Puedes personalizar los colores y estilos desde tailwind.config.js si estás usando Tailwind.
+- Consideraciones
+
+Es necesario ejecutar el backend (nutrifit-backend) simultáneamente para un funcionamiento correcto.
+
+Asegúrate de habilitar CORS en el backend si el frontend se consume desde un dominio distinto.
+
+Los estilos y colores pueden personalizarse desde tailwind.config.js en caso de usar TailwindCSS.
