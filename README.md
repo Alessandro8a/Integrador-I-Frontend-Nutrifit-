@@ -59,4 +59,3 @@ NutriFit es una plataforma web dinámica que ayuda a los usuarios a organizar pl
 * Es necesario ejecutar el backend (**nutrifit-backend**) simultáneamente para un funcionamiento correcto.
 * Asegúrate de habilitar **CORS** en el backend si el frontend se consume desde un dominio distinto.
 * Los estilos y colores pueden personalizarse desde `tailwind.config.js` en caso de usar TailwindCSS.
-* 
