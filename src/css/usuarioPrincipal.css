@@ -1,0 +1,469 @@
+.usuario-principal-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #e4e4e4;
+  padding: 20px;
+}
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.sidebar {
+  width: 100%;
+  max-width: 200px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-right: 20px; 
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar ul li:hover,
+.sidebar ul li.active {
+  background-color: #48bb78;
+  color: #fff;
+}
+
+.content {
+  flex: 1;
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; 
+}
+
+.cuenta-form {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-cuenta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.formulario-cuenta .group {
+  display: flex;
+  gap: 1rem;
+}
+
+.formulario-cuenta input[type='text'],
+.formulario-cuenta input[type='number'],
+.formulario-cuenta input[type='password'],
+.formulario-cuenta select {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #cbd5e0;
+  border-radius: 0.25rem;
+}
+
+.formulario-cuenta button {
+  background-color: #2d3748;
+  color: #ffffff;
+  border: none;
+  margin-right: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s ease;
+  height: 50px;
+  width: 150px;
+}
+
+.formulario-cuenta button:hover {
+  background-color: #4a5568;
+}
+
+.nav-link {
+  font-size: 16px;
+  background-color: #48bb78;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #22a358;
+}
+
+.nav-link .icon {
+  stroke-width: 2;
+  stroke: currentColor;
+  fill: none;
+  vertical-align: middle;
+}
+
+.formulario-cuenta .form-group,
+.formulario-comidas .form-group {
+  margin-bottom: 1rem;
+}
+
+.formulario-cuenta .form-group h4,
+.formulario-comidas .form-group h4 {
+  margin-bottom: 0.5rem;
+}
+
+.formulario-cuenta input,
+.formulario-comidas input,
+.formulario-comidas select {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background-color: #48bb78;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #38a169;
+}
+
+.recetas-lista {
+  list-style: none;
+  padding: 0;
+  background-color: #ffffff; 
+  border: 1px solid #cccccc; 
+  border-radius: 8px; 
+  padding: 20px;
+}
+
+.recetas-lista li {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+}
+
+.recetas-lista h4 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.ingredientes-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.ingrediente-receta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.ingrediente-receta p {
+  margin: 0;
+}
+
+.recetas-lista h3 {
+  margin-top: 20px;
+  font-size: 1.1rem;
+}
+
+.historial-presupuesto table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.historial-presupuesto th,
+.historial-presupuesto td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.historial-presupuesto th {
+  background-color: #f2f2f2;
+}
+
+.historial-presupuesto tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.historial-presupuesto tr:hover {
+  background-color: #ddd;
+}
+
+.ingredientes-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.ingrediente-receta {
+  display: flex;
+  justify-content: space-between;
+}
+
+.planificacion-container {
+  margin: 20px;
+  padding: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  position: relative;
+}
+
+.presupuesto-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Alinea los elementos a la derecha */
+  margin-bottom: 10px; /* Espacio entre el contenedor y el input de presupuesto */
+}
+
+.monto-actual-display {
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+}
+
+.presupuesto-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.recomendaciones-section {
+  margin-bottom: 20px;
+}
+
+.recomendaciones-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.plato-box {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: calc(33.33% - 20px); /* Para mostrar tres columnas en una fila */
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+.plato-box h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.plato-box .plato-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.plato-box .plato-precio {
+  font-size: 14px;
+  color: #555;
+}
+
+.plato-box ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.plato-box ul li {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.botones-bottom {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.boton-descartar {
+  background-color: #e24a4a;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.boton-descartar:hover {
+  background-color: #e21e1e;
+}
+
+.plato-box.seleccionado {
+  background-color: #4caf50;
+}
+
+.boton-seleccionar {
+  background-color: #48bb78;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.boton-seleccionar.deshabilitado {
+  pointer-events: none; /* Deshabilita eventos de puntero */
+  opacity: 0.6; /* Opacidad reducida para indicar deshabilitado */
+  /* Otros estilos de deshabilitado según necesidades */
+}
+
+
+.boton-seleccionar.seleccionado {
+  background-color: #38a169;
+}
+
+.boton-seleccionar:hover {
+  background-color: #38a169;
+}
+
+.botones-bottom button {
+  padding: 10px 10px;
+  margin-top: 20px;
+}
+
+.presupuesto-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.presupuesto-input.input-error {
+  border: 2px solid red; /* Establecer borde rojo en caso de error */
+}
+
+.presupuesto-error {
+  color: red; /* Color de texto rojo para el mensaje de error */
+}
+
+.dias-select {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 200px; /* Ajusta el ancho según tus necesidades */
+}
+
+.dias-select.seleccionado {
+  background-color: lightblue; /* Ejemplo de estilo cuando está seleccionado */
+}
+
+
+@media (max-width: 480px) {
+  .plato-box {
+    width: calc(100% - 20px); /* Para mostrar una columna en una fila */
+  }
+}
+
+@media (max-width: 1100px) {
+  .plato-box {
+    width: calc(50% - 20px);
+  }
+  
+  .botones-bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .botones-bottom button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-content {
+    flex-direction: row;
+  }
+
+  .sidebar {
+    max-width: 250px;
+  }
+
+  .content {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-content {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    max-width: none;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .content {
+    padding: 1rem;
+    margin-left: 0;
+  }
+
+  .planificacion-container {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+}
+
+.recomendaciones-section {
+  margin-bottom: 20px;
+}
+
+.recomendaciones-list {
+  padding-left: 20px;
+}
+
+.recomendaciones-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.recomendaciones-list ul li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+}
